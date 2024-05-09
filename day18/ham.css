@@ -1,0 +1,25 @@
+ul{
+    list-style: none;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+li{
+   
+}
+ul:hover{
+    color: red;
+}
+.show{
+    display: block;
+    background-color: orange;
+    gap: 1rem;
+}

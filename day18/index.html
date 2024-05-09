@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            background-color: yellowgreen;
+            font-size: 40px;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="mian" class="demo">
+        <h1>JAVASCRIPT</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae mollitia sapiente debitis eligendi unde amet eius dignissimos non cumque voluptatum impedit magni fugiat explicabo, odit fugit ea eaque laboriosam atque.</p>
+        <button onclick="fun() ">Click here</button>
+        <button onclick="fun1()">remove</button>
+        <button onclick="fun2()" >add & remove</button>
+    </div>
+    <script>
+            let di = document.getElementById("mian")
+            function fun(){
+                di.classList.add('demo')
+            }
+            function fun1(){
+                di.classList.remove('demo')
+            }
+            function fun2(){
+                di.classList.toggle('demo')
+            }
+    </script> 
+</body>
+</html>
