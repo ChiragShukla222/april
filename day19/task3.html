@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: lightblue;
+            list-style: none;
+            display: flex;
+            gap: 10rem;
+            flex-direction: column;    
+            height: 100vh;
+        }
+        #home{
+            display:block;
+            
+        }
+        img{
+            width: 500px;
+            height: 300px;
+            display: none;
+        }
+        #ben10{
+            width: 500px;
+            height: 300px;
+            display: none;
+        }
+        #car{
+            height: 100px;
+            /* background: url(/day19/download\ \(5\).jpeg)no-repeat center center; */
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <li id="home" onmouseenter="show()" onmouseleave="leave()">home
+            <img src="may-1280X800.jpg" id="mg1">
+        </li>
+        <li id="cartoon" onmouseenter="show1()" onmouseleave="leave1()">cartoon
+            <img src="download (4).jpeg" alt="" id="ben10">
+        </li>
+        <li id="car" onmouseenter="show2()" onmouseleave="leave2()">car
+                 <img src="download (5).jpeg" alt="" id="car1"> 
+        </li>
+        <li>chair</li>
+    </div>
+    <script>
+        let k = document.getElementById('mg1')
+        let m = document.getElementById('ben10')
+        let o = document.getElementById('car1')
+        function show(){
+            k.style.display="block"
+        
+        }
+        function leave(){
+            k.style.display="none"
+            
+            
+        }
+        function show1(){
+            m.style.display="block"
+        
+        }
+        function leave1(){
+            m.style.display="none"
+            
+            
+        }
+        function show2(){
+            o.style.display="block"
+        }
+        function leave2(){
+            o.style.display="none"
+        }
+        
+       
+    </script>
+</body>
+</html>

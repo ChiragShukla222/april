@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hea{
+            text-align: center;
+            margin: 41px;
+        }
+        #para{
+            text-align: center;
+            display: none;
+            background: url("may-1280X800.jpg")no-repeat center center;
+            height: 50vh;
+            color: antiquewhite;
+            text-shadow: 45px;
+
+        }
+        #mg{
+            height: auto;
+            border-radius: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main" onmouseenter="show()" onmouseleave="hide()">
+        <h1 id="hea">HOVER ME</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto facilis esse fuga molestias repellat inventore vero! Excepturi nesciunt laborum, ex esse libero exercitationem labore quo maiores voluptates vero nisi, magni ipsa natus animi neque incidunt molestias dolorem. Eligendi, facere debitis.
+        </p>
+    </div>
+    <script>
+        function show(){
+            let m = document.getElementById("para")
+            m.style.display="block"
+
+        }
+        function hide(){
+            let n =document.getElementById("para")
+            n.style.display="none"
+        }
+    </script>
+</body>
+</html>

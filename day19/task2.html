@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        background:url(/day19/may-1280X800.jpg) ;
+        height: 50vh;
+        color: white;
+        text-align: center;
+    }
+    #para{
+        display: none;
+        margin: 150px;
+        
+        
+    }
+</style>
+<body>
+    <div id="main" onmouseenter="fun()" onmouseleave="sun()">
+        <h1>move here</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa vitae est corrupti enim qui non at delectus ullam id reprehenderit! Corporis, facere est! Incidunt quis ratione magni tenetur at cum blanditiis reprehenderit corporis eaque minima fugit aut vero possimus, aliquid alias amet culpa animi repellat laborum non consequuntur! Aut, facilis?</p>
+    </div>
+    <script>
+        
+        let di = document.getElementById('para')
+        function fun(){
+            di.style.display="block"
+
+        }
+        function sun(){
+            di.style.display="none"
+        }
+    
+    </script>
+</body>
+</html>

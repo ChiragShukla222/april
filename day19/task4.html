@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        background: url(/day19/may-1280X800.jpg); 
+        
+        
+        p{
+            color: white;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: none;
+        }
+    }
+    img{
+        margin-bottom: 10rem;
+    }
+    #h1{
+        text-align: center;
+        padding-top: 10rem;
+        display: block;
+        color: bisque;
+    }
+</style>
+<body>
+    <h2>HOVER ME</h2>
+    <div id="main" onmouseenter="fun()" onmouseleave="nfun()">
+        <h1 id="h1">HOVER ME</h1>
+        <!-- <img src="/day19/may-1280X800.jpg" alt=""> -->
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aliquid, excepturi voluptates minus dolor illum exercitationem, libero voluptate repudiandae quam ipsam quaerat impedit delectus. Sed harum iure similique assumenda, accusantium tempora culpa! Rerum possimus hic architecto voluptatem. Explicabo ea omnis voluptates dolorem beatae, eos sit quasi, exercitationem sapiente non est?</p>
+        
+    </div>
+    <script>
+        let i = document.getElementById('main')
+        let k = document.getElementById('para')
+        function fun(){
+            i.style.display="block"
+            k.style.display="block"
+        }
+        function nfun(){
+            k.style.display="none"
+
+        }
+    </script>
+</body>
+</html>
